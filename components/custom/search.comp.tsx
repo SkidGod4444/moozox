@@ -10,7 +10,7 @@ import {
   CommandList,
   CommandSeparator,
 } from "@/components/ui/command";
-import { Github, History, Instagram, Twitter } from "lucide-react";
+import { Github, Instagram, Twitter } from "lucide-react";
 import Link from "next/link";
 // import { useAuth } from "@/context/auth.context";
 // import { toast } from "sonner";
@@ -18,16 +18,9 @@ import Link from "next/link";
 import { Input } from "@/components/ui/input";
 import { MyLinks } from "@/db/defaults";
 
-interface HistoryInt {
-  slug: string;
-  name: string;
-}
-
 export default function SearchComp() {
   // const { user } = useAuth();
   const [open, setOpen] = React.useState(false);
-  const [history, setHistory] = React.useState<HistoryInt[]>([]);
-  const [isLoading, setIsLoading] = React.useState<boolean>(false);
 
   // React.useEffect(() => {
   //   if (!open) {
@@ -85,7 +78,7 @@ export default function SearchComp() {
       <CommandDialog open={open} onOpenChange={setOpen}>
         <CommandInput placeholder="Type a word or search..." />
         <CommandList>
-          {isLoading ? (
+          {/* {isLoading ? (
             <span className="flex w-full items-center justify-center my-5 text-muted-foreground">
               <History className="size-6 mr-2 animate-spin-counterclockwise" />
               Loading...
@@ -106,7 +99,7 @@ export default function SearchComp() {
                 </Link>
               ))}
             </CommandGroup>
-          )}
+          )} */}
           <CommandSeparator />
           <CommandGroup heading="You are looking for this?">
             <Link href={MyLinks.github}>
