@@ -15,7 +15,7 @@ export async function GET(request: NextRequest) {
 
   try {
     const response = await fetch(
-      `${process.env.JIO_SAAVAN_API}/search/artists?query=${encodeURIComponent(query)}&page=${page}&limit=${limit}`,
+      `${process.env.JIO_SAAVAN_API}/search/songs?query=${encodeURIComponent(query)}&page=${page}&limit=${limit}`,
     );
 
     if (!response.ok) {

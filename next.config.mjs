@@ -1,7 +1,16 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   images: {
-    domains: ['c.saavncdn.com', 'www.jiosaavn.com'],
+    remotePatterns: [
+      {
+        protocol: 'https',
+        hostname: 'c.saavncdn.com',
+      },
+      {
+        protocol: 'https',
+        hostname: 'www.jiosaavn.com',
+      },
+    ],
   },
 };
 

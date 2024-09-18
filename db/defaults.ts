@@ -1,6 +1,6 @@
 export const MyLinks = {
-    github: "https://git.new/pvOF6aq",
-    twitter: "https://x.com/SaidevDhal",
-    instagram: "https://www.instagram.com/dev.unfazed",
-    sponsor: "https://github.com/sponsors/SkidGod4444",
-  };
+  github: "https://l.devwtf.in/moozox",
+  twitter: "https://dub.sh/saidev-twitter",
+  instagram: "https://dub.sh/saidev-instagram",
+  sponsor: "https://git.new/skidgod",
+};
