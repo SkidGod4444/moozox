@@ -31,7 +31,7 @@
     "crypto-browserify": "^3.12.0",
     "jsonwebtoken": "^9.0.2",
     "lucide-react": "^0.441.0",
-    "next": "14.2.8",
+    "next": "14.2.10",
     "next-auth": "^5.0.0-beta.21",
     "next-themes": "^0.3.0",
     "prettier": "^3.3.3",
